@@ -3,6 +3,29 @@
     * Copyright 2013-2020 Start Bootstrap
     * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-creative/blob/master/LICENSE)
     */
+
+  //  function registration() {
+  //    alert("hello world");
+  //  }
+
+  function check(form) {
+    if(form.inputCode.value == "abc")
+    {
+      document.getElementById("error-message").style.display = "none";
+
+      $('#codeModal').modal('hide');
+      $('#registrationModal').modal('show');
+
+    }
+    else
+    {
+      document.getElementById("error-message").style.display = "block";
+    }
+    form.reset();
+    
+
+  }
+
     (function($) {
   "use strict"; // Start of use strict
 
@@ -46,20 +69,20 @@
   $(window).scroll(navbarCollapse);
 
   // Magnific popup calls
-  $('#portfolio').magnificPopup({
-    delegate: 'a',
-    type: 'image',
-    tLoading: 'Loading image #%curr%...',
-    mainClass: 'mfp-img-mobile',
-    gallery: {
-      enabled: true,
-      navigateByImgClick: true,
-      preload: [0, 1]
-    },
-    image: {
-      tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
-    }
-  });
+  // $('#portfolio').magnificPopup({
+  //   delegate: 'a',
+  //   type: 'image',
+  //   tLoading: 'Loading image #%curr%...',
+  //   mainClass: 'mfp-img-mobile',
+  //   gallery: {
+  //     enabled: true,
+  //     navigateByImgClick: true,
+  //     preload: [0, 1]
+  //   },
+  //   image: {
+  //     tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
+  //   }
+  // });
 
   $('#hiddenSpeakers').on('hidden.bs.collapse', function () {
     $('#btn-switch').text('See more')
@@ -76,12 +99,25 @@
 	});
 
 
-  $('.nav-menu').superfish({
-        animation: {
-          opacity: 'show'
-        },
-        speed: 400
-  });
+  // $('.nav-menu').superfish({
+  //       animation: {
+  //         opacity: 'show'
+  //       },
+  //       speed: 400
+  // });
 
+  // $('.registration').click(function() {
+  //   alert("hi amber!");
+  // });
 
+  // $('.regCodeSubmit').click(function() {
+  //  if($(inputcode.value)== "abc"){
+  //     // $($(this).attr('data-id')).show();
+  //     alert();
+  //  }
+  //  else{
+  //    alert("please try again!");
+  //  }
+  // });
+  
 })(jQuery); // End of use strict
