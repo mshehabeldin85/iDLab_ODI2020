@@ -1300,7 +1300,7 @@
                           Speaker :
                         </div>
                         <div class="col-8 col-md-9 col-lg-9 col-xl-9 px-md-0 pl-1 speakers-list">
-                          <div> <a tabindex="0" class="speaker-link" role="button" data-toggle="popover" data-trigger="focus" data-placement="right">Don Scheibenreif</a>
+                          <div> <a tabindex="0" class="speaker-link don-scheibenreif" role="button" data-toggle="popover" data-trigger="focus" data-placement="right">Don Scheibenreif</a>
                             <div class="d-none d-md-inline d-lg-inline d-xl-inline"> - Gartner </div> </div>
                         </div>
                       </div>
@@ -1568,6 +1568,16 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate tempus lacus eget gravida.
           </div> -->
         </div>
+
+        <div id="don-scheibenreif-profile" class="text-center p-3 d-none">
+          <!-- <img class="pastSpeakers-img" src="assets/img/DonScheibenreif.JPG" alt="Don Scheibenreif" width="170px" height="170px"> -->
+          <div class="font-weight-bold">Don Scheibenreif</div>
+          <div class="mx-3"> Vice President - Distinguished Analyst, Customer Experience Research </div>
+          <!-- <div class="mt-4 mb-2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate tempus lacus eget gravida.
+          </div> -->
+        </div>
+
         <div id="david-miller-profile" class="text-center p-3 d-none">
           <img class="pastSpeakers-img" src="assets/img/DavidMiller.png" alt="David Miller" width="170px" height="170px">
           <div class="font-weight-bold">David Miller</div>
@@ -1575,17 +1585,17 @@
           <!-- <div class="mt-4 mb-2">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate tempus lacus eget gravida.
           </div> -->
-        </div> 
+        </div>
         <div id="aleksander-velkoski-profile" class="text-center p-3 d-none">
           <img class="pastSpeakers-img" src="assets/img/AleksandarVelkoski.png" alt="Aleksander Velkoski" width="170px" height="170px">
           <div class="font-weight-bold">Aleksander Velkoski</div>
           <div class="mx-3"> Director, Data Science at National Association of REALTORS® & Distinguished iD-Lab Faculty Member </div>
-        </div> 
+        </div>
         <div id="lawrence-johnson-profile" class="text-center p-3 d-none">
           <img class="pastSpeakers-img" src="assets/img/LawrenceJohnson.png" alt="Lawrence Johnson" width="170px" height="170px">
           <div class="font-weight-bold">Lawrence Johnson</div>
           <div class="mx-3"> Morningstar </div>
-        </div> 
+        </div>
         <div id="robert-nendorf-profile" class="text-center p-3 d-none">
           <!-- <img class="pastSpeakers-img" src="assets/img/LawrenceJohnson.png" alt="Robert A. Nendorf" width="170px" height="170px"> -->
           <div class="font-weight-bold">Robert A. Nendorf</div>
@@ -1651,7 +1661,6 @@
           <div class="font-weight-bold">Brenna Berman</div>
           <div class="mx-3"> City Tech </div>
         </div>
-
 
         <!-- Footer-->
         <footer class="bg-dark py-5 footer">
@@ -1747,6 +1756,11 @@
                 html: true,
                 content: document.getElementById("olayele-adelakun-profile")
               });
+
+              $('.don-scheibenreif').popover({
+                html: true,
+                content: document.getElementById("don-scheibenreif-profile")
+              });
               $('.david-miller').popover({
                 html: true,
                 content: document.getElementById("david-miller-profile")
@@ -1810,6 +1824,7 @@
               $('.brenna-berman').popover({
                 html: true,
                 content: document.getElementById("brenna-berman-profile")
+
               });
 
               // Show speaker profiles on popover links click
@@ -1818,6 +1833,9 @@
               });
               $('.olayele-adelakun').on('show.bs.popover', function () {
                 $('#olayele-adelakun-profile').removeClass('d-none');
+              });
+              $('.don-scheibenreif').on('show.bs.popover', function () {
+                $('#don-scheibenreif-profile').removeClass('d-none');
               });
               $('.david-miller').on('show.bs.popover', function () {
                 $('#david-miller-profile').removeClass('d-none');
