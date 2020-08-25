@@ -2076,25 +2076,25 @@ a.close.disabled {
 
 @media (max-width: 320px){
   .noRegCode{
-    margin-right: 6em;
+    margin-right: 2em;
   }
 }
 
 @media (min-width: 360px){
   .noRegCode{
-    margin-right: 9em;
+    margin-right: 5em;
   }
 }
 
 @media (min-width: 411px){
   .noRegCode{
-    margin-right: 12em;
+    margin-right: 8em;
   }
 }
 
 @media (min-width: 450px){
   .noRegCode{
-    margin-right: 15em;
+    margin-right: 11em;
   }
 }
 
@@ -6600,7 +6600,7 @@ html {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(0, 26, 44, 0.8) 0%, rgba(0, 26, 44, 0.8) 100%), url("../assets/img/IMG_5599.png");
+  background: linear-gradient(to bottom, rgba(0, 26, 44, 0.8) 0%, rgba(0, 26, 44, 0.8) 100%), url("../assets/img/img_5599_32251013438_o-min.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -6782,7 +6782,7 @@ header.masthead h1 {
 
 @media (min-width: 992px){
   .noRegCode {
-    margin-right: 9em;
+    margin-right: 6em;
     font-size: 0.9em;
   }
   .regSubmit{
