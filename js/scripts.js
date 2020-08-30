@@ -9,6 +9,23 @@
   //  }
 
   function check(form) {
+    const api_key = "keyPerKCGLdhIH8g8"; // API KEY
+    const baseID = "appBa58conr80osIb";  // BASE ID
+
+    // Specify the URL to call.
+    const url = "https://api.airtable.com/v0/" + baseID
+    + "/" + encodeURIComponent("RegistrationCodes")
+    + "?" + "api_key=" + api_key;
+
+    fetch(url)
+    .then((resp) => resp.json())
+    .then(function(data) {
+      console.log(data);
+    })
+    .catch(function(error) {
+      console.log(error);
+    });
+
     if(form.inputCode.value == "abc")
     {
       document.getElementById("error-message").style.display = "none";
@@ -22,7 +39,7 @@
       document.getElementById("error-message").style.display = "block";
     }
     form.reset();
-    
+
 
   }
 
@@ -119,5 +136,5 @@
   //    alert("please try again!");
   //  }
   // });
-  
+
 })(jQuery); // End of use strict
