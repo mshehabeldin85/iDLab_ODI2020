@@ -62,7 +62,7 @@
                           <img src="assets/img/HighLight.svg" width="49px" height="81px">
                       </div>
                       <div class="hero-detail-div justify-content-left text-left">
-                          <p class="text-white font-weight-light mb-3 hero-detail-para sub-text">October 16th, 2020</p>
+                          <p class="text-white font-weight-light mb-3 hero-detail-para sub-text">October 15th-16th, 2020</p>
                           <p class="text-white font-weight-light sub-text">DePaul University, Chicago, IL</p>
                       </div>
                   </div>
@@ -822,6 +822,15 @@
                         </div>
                     </a>
                 </div>
+                <div class="col-lg-3 col-sm-6 justify-content-center text-center resp-speakers">
+                  <a class="portfolio-box" href="https://www.linkedin.com/in/daviesweis/" target="_blank">
+                      <img class="img-fluid" src="assets/img/DavieSweis.png" alt="Shobhit Jain" width="202px" height="202px" />
+                      <div class="portfolio-box-caption text-center">
+                          <div class="project-name">Davie Sweis</div>
+                          <div class="project-category text-black">Vice President of Technology & Enabling of the Global Business Services at Bosch</div>
+                      </div>
+                  </a>
+              </div>
                 </div>
                   </div>
               </div>
@@ -955,7 +964,11 @@
                       <div class="topic pb-3"> Keynote </div>
                       <div class="row speakers">
                         <div class="col-auto pr-1">
-                          Speaker : TBD
+                          Speaker : 
+                        </div>
+                        <div>
+                          <a tabindex="0" class="speaker-link davie-sweis" role="button" data-toggle="popover" data-trigger="focus" data-placement="right">Davie Sweis</a>
+                          <div class="d-none d-md-inline d-lg-inline d-xl-inline"> - Bosch </div>
                         </div>
                         <div class="col-8 col-md-9 col-lg-9 col-xl-9 px-md-0 pl-1 speakers-list">
 
@@ -1860,6 +1873,16 @@
 
           </div>
         </div>
+        <div id="davie-sweis-profile" class="text-center p-3 d-none">
+          <img class="pastSpeakers-img" src="assets/img/DavieSweis.png" alt="Shobhit Jain" width="170px" height="170px">
+          <div class="font-weight-bold">Davie Sweis</div>
+          <div class="mx-3"> Bosch </div>
+           <div class="mt-4 mb-2">
+            Davie Sweis is the Business Chief Digital Officer and Vice President of Technology & Enabling of the Global Business Services at Bosch. 
+            After having held various positions within the corporate sector of IT and prior to his latest role, Davie became the head of Bosch's global Digital Business unit in summer of 2013. This unit has allowed Bosch to continue being at the forefront of development and the IT landscape by advancing topics such as IoT, Mobility, Cloud and API Management to create solutions for a connected life. In 2017, he took over as the Head of Information Technology, responsible for representing as the global CIO in the Americas. In addition to his current role, he also serves as the champion for driving Digital Transformation within Bosch North America.
+
+          </div>
+        </div>
 
         <!-- Footer-->
         <footer class="bg-dark py-5 footer">
@@ -2082,6 +2105,11 @@
                 content: document.getElementById("nick-ionita-profile")
 
               });
+              $('.davie-sweis').popover({
+                html: true,
+                content: document.getElementById("davie-sweis-profile")
+
+              });
 
               // Show speaker profiles on popover links click
               $('.roman-dumiak').on('show.bs.popover', function () {
@@ -2182,6 +2210,9 @@
               });
               $('.nick-ionita').on('show.bs.popover', function () {
                 $('#nick-ionita-profile').removeClass('d-none');
+              });
+              $('.davie-sweis').on('show.bs.popover', function () {
+                $('#davie-sweis-profile').removeClass('d-none');
               });
 
               // Hide popover box when moving focus
