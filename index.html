@@ -852,6 +852,29 @@
                   </div>
 
                 </div>
+                <div class="row pt-3">
+
+                  <div class="col-lg-3 col-sm-6 justify-content-center text-center resp-speakers">
+                    <a class="portfolio-box" href="https://www.linkedin.com/in/enrique-/" target="_blank">
+                        <img class="img-fluid" src="assets/img/EnriqueAceves.png" alt="Enrique Aceves" width="202px" height="202px" />
+                        <div class="portfolio-box-caption text-center">
+                            <div class="project-name">Enrique Aceves</div>
+                            <div class="project-category text-black">Vice President at Nuveen </div>
+                        </div>
+                    </a>
+                  </div>
+
+                  <div class="col-lg-3 col-sm-6 justify-content-center text-center resp-speakers">
+                    <a class="portfolio-box" href="https://www.linkedin.com/in/sivabalus/" target="_blank">
+                        <img class="img-fluid" src="assets/img/SivaBalu.png" alt="Siva Balu" width="202px" height="202px" />
+                        <div class="portfolio-box-caption text-center">
+                            <div class="project-name">Siva Balu</div>
+                            <div class="project-category text-black">VP & CIO at YMCA of the USA </div>
+                        </div>
+                    </a>
+                  </div>
+
+                </div>
                 </div>
               </div>
               <div class="justify-content-center align-items-center text-center d-block pt-5  mt-0 mb-0 ml-auto mr-auto" >
@@ -1119,6 +1142,10 @@
                           <div>
                             <a tabindex="0" class="speaker-link kim-holmes" role="button" data-toggle="popover" data-trigger="focus" data-placement="right">Kim Holmes</a>
                             <div class="d-none d-md-inline d-lg-inline d-xl-inline"> - Discover </div>
+                          </div>
+                          <div>
+                            <a tabindex="0" class="speaker-link enrique-aceves" role="button" data-toggle="popover" data-trigger="focus" data-placement="right">Enrique Aceves</a>
+                            <div class="d-none d-md-inline d-lg-inline d-xl-inline"> - Nuveen </div>
                           </div>
                         </div>
                       </div>
@@ -1572,6 +1599,10 @@
                             <a tabindex="0" class="speaker-link terry-finch" role="button" data-toggle="popover" data-trigger="focus" data-placement="right">Terry Finch</a>
                             <div class="d-none d-md-inline d-lg-inline d-xl-inline"> - Abbott </div>
                           </div>
+                          <div>
+                            <a tabindex="0" class="speaker-link siva-balu" role="button" data-toggle="popover" data-trigger="focus" data-placement="right">Siva Balu</a>
+                            <div class="d-none d-md-inline d-lg-inline d-xl-inline"> - YMCA </div>
+                          </div>
                         </div>
                       </div>
                       <div class="row speakers pt-3">
@@ -1943,6 +1974,22 @@
           </div>
         </div>
 
+        <div id="enrique-aceves-profile" class="text-center p-3 d-none">
+          <img class="pastSpeakers-img" src="assets/img/EnriqueAceves.png" alt="Enrique Aceves" width="170px" height="170px">
+          <div class="font-weight-bold">Enrique Aceves</div>
+          <div class="mx-3"> Vice President, Nuveen </div>
+          <div class="mt-4 mb-2">
+          </div>
+        </div>
+
+        <div id="siva-balu-profile" class="text-center p-3 d-none">
+          <img class="pastSpeakers-img" src="assets/img/SivaBalu.png" alt="Siva Balu" width="170px" height="170px">
+          <div class="font-weight-bold">Siva Balu</div>
+          <div class="mx-3"> VP & CIO, YMCA of the USA </div>
+          <div class="mt-4 mb-2">
+          </div>
+        </div>
+
         <!-- Footer-->
         <footer class="bg-dark py-5 footer">
             <div class="container pl-4 pr-4">
@@ -2152,27 +2199,30 @@
               $('.brenna-berman').popover({
                 html: true,
                 content: document.getElementById("brenna-berman-profile")
-
               });
               $('.john-yesko').popover({
                 html: true,
                 content: document.getElementById("john-yesko-profile")
-
               });
               $('.nick-ionita').popover({
                 html: true,
                 content: document.getElementById("nick-ionita-profile")
-
               });
               $('.davie-sweis').popover({
                 html: true,
                 content: document.getElementById("davie-sweis-profile")
-
               });
               $('.salma-ghanem').popover({
                 html: true,
                 content: document.getElementById("salma-ghanem-profile")
-
+              });
+              $('.enrique-aceves').popover({
+                html: true,
+                content: document.getElementById("enrique-aceves-profile")
+              });
+              $('.siva-balu').popover({
+                html: true,
+                content: document.getElementById("siva-balu-profile")
               });
 
               // Show speaker profiles on popover links click
@@ -2280,6 +2330,12 @@
               });
               $('.salma-ghanem').on('show.bs.popover', function () {
                 $('#salma-ghanem-profile').removeClass('d-none');
+              });
+              $('.enrique-aceves').on('show.bs.popover', function () {
+                $('#enrique-aceves-profile').removeClass('d-none');
+              });
+              $('.siva-balu').on('show.bs.popover', function () {
+                $('#siva-balu-profile').removeClass('d-none');
               });
 
               // Hide popover box when moving focus
