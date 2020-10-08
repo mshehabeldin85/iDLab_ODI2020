@@ -6728,6 +6728,10 @@ header.masthead h1 {
   border-bottom: 5px solid #174E77;
 }
 
+.virtual-link {
+  text-decoration: underline !important;
+}
+
 .speaker-link {
   color: white;
   text-decoration: underline !important;
