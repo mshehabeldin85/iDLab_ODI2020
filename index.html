@@ -882,7 +882,7 @@
 
                   <div class="col-lg-3 col-sm-6 justify-content-center text-center resp-speakers">
                     <a class="portfolio-box" href="https://www.linkedin.com/in/aine-allen-b352474/" target="_blank">
-                        <img class="img-fluid" src="assets/img/AineAllen.png" alt="Siva Balu" width="202px" height="202px" />
+                        <img class="img-fluid" src="assets/img/AineAllen.png" alt="Aine Allen" width="202px" height="202px" />
                         <div class="portfolio-box-caption text-center">
                             <div class="project-name">Aine Allen</div>
                             <div class="project-category text-black">Divisional Vice President, Business & Technology Services </div>
@@ -890,6 +890,27 @@
                     </a>
                   </div>
 
+                  <div class="col-lg-3 col-sm-6 justify-content-center text-center resp-speakers">
+                    <a class="portfolio-box" href="https://www.linkedin.com/in/meriahlanagarrett/" target="_blank">
+                        <img class="img-fluid" src="assets/img/MeriahGarrett.png" alt="Meriah Garrett" width="202px" height="202px" />
+                        <div class="portfolio-box-caption text-center">
+                            <div class="project-name">Meriah Garrett</div>
+                            <div class="project-category text-black">Chief Design Officer at USAA </div>
+                        </div>
+                    </a>
+                  </div>
+
+                </div>
+                <div class="row pt-3 d-flex justify-content-center">
+                  <div class="col-lg-3 col-sm-6 justify-content-center text-center resp-speakers">
+                    <a class="portfolio-box" href="https://www.linkedin.com/in/makoto-nakayama-81960b2/" target="_blank">
+                        <!-- <img class="img-fluid" src="assets/img/MakotoNakayama.png" alt="Makoto Nakayama" width="202px" height="202px" /> -->
+                        <div class="portfolio-box-caption text-center">
+                            <div class="project-name">Makoto Nakayama</div>
+                            <div class="project-category text-black">Associate Professor of College of Computing and Digital Media (CDM) at DePaul University </div>
+                        </div>
+                    </a>
+                  </div>
                 </div>
                 </div>
               </div>
@@ -2014,9 +2035,25 @@
         </div>
 
         <div id="aine-allen-profile" class="text-center p-3 d-none">
-          <img class="pastSpeakers-img" src="assets/img/AineAllen.png" alt="Siva Balu" width="170px" height="170px">
+          <img class="pastSpeakers-img" src="assets/img/AineAllen.png" alt="Aine Allen" width="170px" height="170px">
           <div class="font-weight-bold">Aine Allen</div>
           <div class="mx-3"> Divisional Vice President, Business & Technology Services </div>
+          <div class="mt-4 mb-2">
+          </div>
+        </div>
+
+        <div id="meriah-garrett-profile" class="text-center p-3 d-none">
+          <img class="pastSpeakers-img" src="assets/img/MeriahGarrett.png" alt="Meriah Garrett" width="170px" height="170px">
+          <div class="font-weight-bold">Meriah Garrett</div>
+          <div class="mx-3"> Chief Design Officer at USAA </div>
+          <div class="mt-4 mb-2">
+          </div>
+        </div>
+
+        <div id="makoto-nakayama-profile" class="text-center p-3 d-none">
+          <!-- <img class="pastSpeakers-img" src="assets/img/MakotoNakayama.png" alt="Makoto Nakayama" width="170px" height="170px"> -->
+          <div class="font-weight-bold">Makoto Nakayama</div>
+          <div class="mx-3"> Associate Professor of College of Computing and Digital Media (CDM) at DePaul University </div>
           <div class="mt-4 mb-2">
           </div>
         </div>
@@ -2259,6 +2296,14 @@
                 html: true,
                 content: document.getElementById("aine-allen-profile")
               });
+              $('.meriah-garrett').popover({
+                html: true,
+                content: document.getElementById("meriah-garrett-profile")
+              });
+              $('.makoto-nakayama').popover({
+                html: true,
+                content: document.getElementById("makoto-nakayama-profile")
+              });
 
               // Show speaker profiles on popover links click
               $('.roman-dumiak').on('show.bs.popover', function () {
@@ -2374,6 +2419,12 @@
               });
               $('.aine-allen').on('show.bs.popover', function () {
                 $('#aine-allen-profile').removeClass('d-none');
+              });
+              $('.meriah-garrett').on('show.bs.popover', function () {
+                $('#meriah-garrett-profile').removeClass('d-none');
+              });
+              $('.makoto-nakayama').on('show.bs.popover', function () {
+                $('#makoto-nakayama-profile').removeClass('d-none');
               });
 
               // Hide popover box when moving focus
